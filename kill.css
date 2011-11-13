@@ -1,0 +1,3 @@
+#pagelet_home_stream, .ticker_container, .fbTickerFooter, .fbFeedTicker{
+  display: none !important
+}
