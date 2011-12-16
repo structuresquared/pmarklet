@@ -1,16 +1,16 @@
 {
-  "name": "Feed Frack",
+  "name": "Pornmarklet",
   "version": "1.0",
-  "description": "Removes the addictive properties of Facebook.",
-  "options_page": "options.html",
+  "background_page": "background.html",
+  "description": "Saves images to Pornogrphr.com.",
   "browser_action": {
-    "default_icon": "icon.png",
-    "popup": "popup.html"
+    "default_icon": "icon.png"
   },
   "content_scripts": [
     {
-      "matches": ["http://www.facebook.com/*"],
-      "js": ["jquery-1.7.min.js", "kill.js"]
+      "matches": ["http://*/*"],
+      "js": ["jquery-1.7.min.js", "finder.js", "jquery.colorbox-min.js"],
+      "css":["colorbox.css"]
     }
   ] 
 }
